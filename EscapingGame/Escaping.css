@@ -1,9 +1,34 @@
-canvas {
-    border: 1px dotted red;
-    background-color: lightblue;
-    width: 400px;
-    height: 600px;
+body {
+    margin: 0;
+}
+#homePageTitle {
+    top: 30px;
     position: relative;
     margin: auto;
     text-align: center;
+    font-size: 45px;
+}
+
+.mainBox {
+    position: relative;
+    margin: auto;
+    top: 80px;
+    border: 1px solid black;
+    background-color: lightblue;
+    width: 400px;
+    height: 600px;
+    text-align: center;
+}
+
+#score {
+    position: relative;
+    margin: 5px;
+    right: 30%;
+}
+
+.btn {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 90px;
 }
