@@ -29,6 +29,14 @@ body {
     text-align: left;
 }
 
+#person {
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    
+}
+
 .btn {
     position: relative;
     margin: auto;
