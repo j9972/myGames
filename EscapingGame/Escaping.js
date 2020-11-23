@@ -1,12 +1,17 @@
 const person = document.querySelector('#person');
-
+let dx = 0;
 window.addEventListener('keydown', (e) => {
     switch(e.code) {
+        // 왼쪽으로 움직이는데 맨 끝에 도달하면 못움직이게 만들기
         case 'ArrowLeft': {
-            
+            console.log('왼쪽');
+            person.dx -= 1;
             break;
         }   
+        // 오른쪽으로 움직이는데 맨 끝에 도달하면 못움직이게 만들기
         case 'ArrowRight': {
+            console.log('오른쪽');
+            person.dx += 1;
             break;
         }
     }
