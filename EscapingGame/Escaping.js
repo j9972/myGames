@@ -20,6 +20,7 @@ window.addEventListener('keydown', (e) => {
         case 'ArrowLeft': {
             console.log('왼쪽');
             if(player.x < screen.left) {
+                // screen.left가 의미하는바는 게임창의 가장 왼쪽
                 player.x = 0;
             }
             break;
@@ -28,6 +29,7 @@ window.addEventListener('keydown', (e) => {
         case 'ArrowRight': {
             console.log('오른쪽');
             if(player.x > screen.right) {
+                // screen.right가 의미하는바는 게임창의 가장 오른쪽
                 player.x = screen.right;
             }
             break;
@@ -35,17 +37,20 @@ window.addEventListener('keydown', (e) => {
     }
 });
 
+let int = setInterval(tick, 2000);
+tick();
+
 const score = document.querySelector('#score');
 const start = document.querySelector('#start');
 const pause = document.querySelector('#pause');
 const store = document.querySelector('#store');
 
 document.querySelector('#pause').addEventListener('click', () => {
-    
+    clearInterval(int);
 })
 document.querySelector('#start').addEventListener('click',() => {
-
+    tick();
 });
-document.querySelector('#stor').addEventListener('click', () => {
+document.querySelector('#store').addEventListener('click', () => {
 
 });
