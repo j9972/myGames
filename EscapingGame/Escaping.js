@@ -1,5 +1,6 @@
 const player = document.querySelector('#person');
 const screen = document.querySelector('.mainBox');
+const obstacle = document.querySelector('#obstacle');
 
 function init() {
     //TODO: 처음의 구조
@@ -16,9 +17,12 @@ function tick() {
 function crush() {
     //TODO: 똥이랑 player랑 만났는지 확인하기
     let canGoDown = true;
+    let x;
     if(canGoDown) {
         // TODO: 아래방향으로 똥이 움직이기
-        if()
+        if( !(obstacle.x == player.x && obstacle.y == player.y) ){
+            // 한칸 내리기
+        }
     }
     else {
         init();
