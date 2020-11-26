@@ -34,8 +34,7 @@ body {
     height: 60px;
     display: inline-block;
     position: relative;
-    top: calc(82% + 3px);
-    right: 10%;
+    top: 77%
 }
 
 #obstacle {
