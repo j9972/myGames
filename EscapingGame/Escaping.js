@@ -1,6 +1,10 @@
 const player = document.querySelector('#person');
 const screen = document.querySelector('.mainBox');
 
+function init() {
+    //TODO: 처음의 구조
+}
+
 function randomDrawing() {
     //TODO: 똥이 시작되는 지점에서 랜덤하게 만들기
 }
@@ -11,6 +15,16 @@ function tick() {
 
 function crush() {
     //TODO: 똥이랑 player랑 만났는지 확인하기
+    let canGoDown = true;
+    if(canGoDown) {
+        // TODO: 아래방향으로 똥이 움직이기
+        if()
+    }
+    else {
+        init();
+        randomDrawing();
+        canGoDown = false;
+    }
 }
 
 // player의 위치를 바닥에 고정을 하고 x의 값만 변하게 해주면 됨.
