@@ -35,6 +35,13 @@ body {
     display: inline-block;
     position: relative;
     top: calc(82% + 3px);
+    right: 10%;
+}
+
+#obstacle {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
 }
 
 .btn {
