@@ -12,6 +12,8 @@ function randomDrawing() {
 
 function tick() {
     //TODO: 똥이 setInteval로 시간당으로 한칸씩 내려오게끔 만들기
+    randomDrawing();
+    // 시간이 지날수록 더 빨리 만들어져야 하는데 그것도 한계가 있게끔 만들기
 }
 
 function crush() {
@@ -55,7 +57,7 @@ window.addEventListener('keydown', (e) => {
     }
 });
 
-let int = setInterval(tick, 2000);
+let int = setInterval(tick, 1000);
 tick();
 
 const score = document.querySelector('#score');
