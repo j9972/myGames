@@ -66,6 +66,7 @@ const pause = document.querySelector('#pause');
 const store = document.querySelector('#store');
 
 document.querySelector('#pause').addEventListener('click', () => {
+    // 시간 clear 그리고 인터벌 초기화
     clearInterval(int);
 })
 document.querySelector('#start').addEventListener('click',() => {
